@@ -1,0 +1,30 @@
+1-What is Decision Tree?
+Decision tree is a tree-like upside-down flow chart~ (root on top, branch, and leaf in the bottom)
+The main purpose of decision tree is to help find important feature of the data and make calculated decisions~
+Each branch and leaf is using recursive partitioning method on the basis of attribute value! 
+
+2-What is the structure and symbal meaning in Decision Tree？
+Decision tree contains internal node for attribute, root node, branch and leaf for decision.
+
+3-Creating decision tree process? 
+1st, we need to devide data into training set and testing set, usually is 30/70 or 20/80.
+2nd, we use ASM to create decision tree based on training data. 
+3rd, we use testing data to test our model.
+4th, we will use performance evaluation matrix such as accuracy, precision, and recall to adjust the model. 
+
+4-How does "spliting Process" work? 
+The spliting, also called Attribute Selection Measures, will partition data into best possible manner. 
+ASM, the spliting process, will create a rank for each feature with a score. 
+Each branch will contain information gain, gain ratio(size), Gini index. 
+
+5-What is Information gain? 
+
+2-Difference between Decision Tree VS Binary search Tree
+3-What is the adv and disadv of Decision Tree?
+5-How to write simple Decision Tree? What package in Python does it need to create Decision tree?
+6-
+
+References
+1-https://www.datacamp.com/community/tutorials/decision-tree-classification-python
+2-https://youtu.be/DCZ3tsQIoGU
+3-
