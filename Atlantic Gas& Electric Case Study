@@ -1,0 +1,9 @@
+1- Customer/Locations= 1:n 
+2-Location/Meters = 1:n 
+3-Rate Schedule 
+4-CUST_BILL ( include Meter/Meter Lcoation/Customer/energe charge/PUC surcharge/energy commission tax) 
+5-
+
+Steps:
+1-Break ER into Fact and Dimension table 
+2-Choose star vs snowflake schema 
