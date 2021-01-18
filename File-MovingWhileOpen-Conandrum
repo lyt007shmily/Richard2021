@@ -1,0 +1,16 @@
+1st question, do people notice "you can't move the file when it's opened in windows"
+         but, you can "move file while it's open or editing in Mac OS". 
+         
+Why? 
+So for windows, they use FAT filesystem. FAT store data directly in the directory entry including file's loacation. 
+Opening a file means reading the directory entry itself into memroy and updating it when editing the file. 
+However, that means there is one directory entry per file and you cannot delete(or move) the file while it's open. 
+
+For Mac OS, the system maintains several references to the inode, which contain the meta-information about the fie.
+As long as there are references, the inode and file's data are kept.(kept where?) 
+That means, when move a file within the same device, a new directory entry is created in the destination directory,
+and original directory entry is removed. 
+
+In case of power fail or system shutdown, the disk will perform a FSCK(file system check). Sometime the on-disk
+inode and directory structure can be recovered and file will remain in the directory or in the lost+found directory.
+
